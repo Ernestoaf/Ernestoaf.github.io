@@ -36,11 +36,11 @@ header{
     align-items: center; /*Elementos centrados en la barra de nav*/
     /* opacity: 0.5; */
 }
-
+/* 
 .burger{
     font-size: 40px;
     display: none;
-}
+} */
 
 a{
     text-decoration: none;
@@ -134,6 +134,159 @@ header a:hover{
     color: rgb(84, 182, 247);
 }
 
+/* Menu hamburguesa pagina de inciio*/
+
+.burger{
+    font-size: 40px;
+    display: none;
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+.blanco .burger{
+    color: white;   
+}
+.blanco .burger:hover{
+    color: #EA5C1C;   
+}
+
+.menu{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 80%;
+    height: 100vh;
+    display: none;
+    /* background-color: white; */
+    background-image: url('../img/fondomenu.jpg');
+    z-index: 100;
+}
+
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.menu ul a{
+    padding: 10px;
+}
+
+.menu ul a.activo{
+    /* background-color: rgb(0, 174, 255); */
+    background-color: rgba(232, 165, 10, 0.7);
+}
+
+.menu ul a:hover{
+    background-color: rgba(232, 165, 10, 0.3);
+}
+
+
+.cerrar{
+    font-size: 34px;
+    color: white;
+    width: 30px;
+    height: 50px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* menu hamburguesa paginas normales */
+
+.burger2{
+    display: none;
+}
+
+.burger2 .barra{
+    height: 4px;
+    width: 40px;
+    margin: 7px;
+    background-color: black;
+}
+
+.arriba, .media, .abajo{
+    transition: all 700ms ease;
+}
+
+.burger2.abierto .arriba{
+    transform: translateY(11px) rotateZ(40deg);
+}
+
+.burger2.abierto .media{
+    width: 0;
+}
+
+.burger2.abierto .abajo{
+    transform: translateY(-11px) rotateZ(-40deg);
+}
+
+.menu2{
+    position: absolute;
+    top:100px;
+    left: 0; /*Para que aparezca pegado al lateral*/
+    width: 80%;
+    height: calc(100vh - 105px); /* CPAra que calcule el 100% de la pantalla menos los 100px de la barra de navegacion, y que lo haga con todos los dispotivos dado el 100vh*/
+    color: white;
+    z-index: 10;
+    display: none;
+    background-image: url('../img/fondomenu.jpg');
+    box-shadow: 0 4px 4px grey;
+}
+
+.menu2 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu2 ul a{
+    width: 100%;
+    /* background-color: rgba(232, 165, 10, 0.267); */
+    padding: 10px 20px;
+    transform: translateX(-200px);
+}
+
+.menu2 ul a:hover{
+    background-color: rgba(232, 165, 10, 0.267);
+}
+
+
+.menu2 ul a.activo{
+    /* background-color: rgb(0, 174, 255); */
+    background-color: rgba(232, 165, 10, 0.7);
+}
+
+
+
+
+.menu2 ul a:nth-child(1){
+    transition: transform 500ms ease-in-out;
+}
+
+
+.menu2 ul a:nth-child(2){
+    transition: transform 700ms ease-in-out;
+}
+
+
+.menu2 ul a:nth-child(3){
+    transition: transform 900ms ease-in-out;
+}
+
+
+.menu2 ul a:nth-child(4){
+    transition: transform 1100ms ease-in-out;
+}
+
+
+.menu2 ul a:nth-child(5){
+    transition: transform 1300ms ease-in-out;
+}
+
+.menu2 ul a.aparicion{
+    transform:translateX(0px);
+}
 /*Hero*/
 
 .hero{
@@ -848,7 +1001,7 @@ body .bread{
 
 
 @media(max-width:650px){
-    .burger{
+    .burger, .burger2{
         display: initial;
     }
 
