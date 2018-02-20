@@ -22,19 +22,19 @@
 
 <body>
     <header class="blanco">
-            <div class="burger2">
-                    <div class="barra arriba"></div>
-                    <div class="barra media"></div>
-                    <div class="barra abajo"></div>
-            </div>
-            <div class="menu2">
-                    <ul>
-                            <a href="/">Inicio</a>
-                            <a href="./compra.html">Compra</a>
-                            <a href="./alquiler.html" class="activo">Alquiler</a>
-                            <a href="./contacto.html">Contacto</a>
-                    </ul>
-            </div>
+        <div class="burger2">
+            <div class="barra arriba"></div>
+            <div class="barra media"></div>
+            <div class="barra abajo"></div>
+        </div>
+        <div class="menu2">
+            <ul>
+                <a href="/">Inicio</a>
+                <a href="./compra.html">Compra</a>
+                <a href="./alquiler.html" class="activo">Alquiler</a>
+                <a href="./contacto.html">Contacto</a>
+            </ul>
+        </div>
         <a href="./index.html#" class="logo">
             <i class="fas fa-home"></i>
         </a>
@@ -92,8 +92,22 @@
             <p> Antigüedad : 5 años</p>
             <p> Agua caliente sanitaria : Gas Natural</p>
             <p> Calefacción : Gas Natural</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.7959583247864!2d-4.516907970769366!3d36.597881298749456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc636f7fd0b1%3A0xa022dcdcb9e68d00!2sAv.+Alay%2C+29630+Benalm%C3%A1dena%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518519630610"
-                width="300" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="overlay"></div>
+            <div class="col4 columna">
+                <div class="mapa" id="open">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.7959583247864!2d-4.516907970769366!3d36.597881298749456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc636f7fd0b1%3A0xa022dcdcb9e68d00!2sAv.+Alay%2C+29630+Benalm%C3%A1dena%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518519630610"
+                        width="300" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <button class="boton" >Ver Mapa</button>
+                </div>
+            </div>
+
+            <div class="modal">
+                    <p class="modal-header">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.298926053577!2d-4.575568049918184!3d36.59510897989315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e34521799fa9%3A0xa9eeb556dfdcdc56!2sBenalmadena+Pueblo!5e0!3m2!1ses!2ses!4v1518562082318"
+                            width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </p>
+                    <button class="boton" id="close">Cerrar</button>
+                </div>
 
         </div>
         <div class="col3">
@@ -103,14 +117,15 @@
 
     <div class="fila">
         <h1>Descripción</h1>
-        <p>"Encantador piso en Benalmádena. Por su situacion tiene preciosas vistas a la playa. Es luminosa y
-            espaciosa. La vivienda tiene 150 mts <sup>2</sup> + un garage de 35m ademas tiene dos patios.. Casa de una planta que consta de un patio a la
-            entrada desde el que se accede a la vivienda y al garaje. La vivienda esta distribuida en hall de entrada, gran
-            salon - comedor con chimenea ( este salon tiene claraboyas en el techo, pero ofrece la posibilidad de abrir ventanas
-            hacia la calle), 5 dormitorios + 1 sala, cocina- comedor con estufa de leña, 3 despensas o trasteros, 2 baños,
-            garaje y patio trasero, en este ultimo hay un pequeño almacen. El estado de la casa es bueno, aunque necesita
-            una nueva carpinteria en algunas ventanas, subsanar dos paredes interiores y pintar la fachada trasera. La casa
-            respira encanto y carácter. </p>
+        <p>"Encantador piso en Benalmádena. Por su situacion tiene preciosas vistas a la playa. Es luminosa y espaciosa. La
+            vivienda tiene 150 mts
+            <sup>2</sup> + un garage de 35m ademas tiene dos patios.. Casa de una planta que consta de un patio a la entrada desde
+            el que se accede a la vivienda y al garaje. La vivienda esta distribuida en hall de entrada, gran salon - comedor
+            con chimenea ( este salon tiene claraboyas en el techo, pero ofrece la posibilidad de abrir ventanas hacia la
+            calle), 5 dormitorios + 1 sala, cocina- comedor con estufa de leña, 3 despensas o trasteros, 2 baños, garaje
+            y patio trasero, en este ultimo hay un pequeño almacen. El estado de la casa es bueno, aunque necesita una nueva
+            carpinteria en algunas ventanas, subsanar dos paredes interiores y pintar la fachada trasera. La casa respira
+            encanto y carácter. </p>
     </div>
 
     <div class="fila centrar">
@@ -173,7 +188,7 @@
                 </div>
                 <div class="fila">
                     <label for="correo">Correo Electrónico</label>
-                    <input type="email" name="correo" id="correo" placeholder="Correo electrónico"size="28">
+                    <input type="email" name="correo" id="correo" placeholder="Correo electrónico" size="28">
                 </div>
             </div>
             <div class="fila">

@@ -29,4 +29,18 @@ $(document).ready(function () {
             $("header").addClass("blanco");
         }
     });
+
+    //Ventana modal
+    // $("#open").click(function(){
+    //     $(".modal").addClass("visible");
+    // });
+    //Ventana modal
+    $("#open").click(function(){
+        $(".modal, .overlay").addClass("visible");
+    });
+
+    //Añadiendo la clase overlay conseguimos que se cierre tambien pulsando fuera de la ventana
+    $("#close, .overlay").click(function(){
+        $(".modal, .overlay").removeClass("visible");
+    });
 });

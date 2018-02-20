@@ -284,6 +284,19 @@ header a:hover{
 .menu2 ul a.aparicion{
     transform:translateX(0px);
 }
+
+.boton{
+    font-size: 20px;
+    padding: 10px 60px;
+    height: 50px;    
+    background-color: rgba(200, 213, 185, 0.9);
+    border-color: rgba(200, 213, 185, 0.9);
+    color: white;
+    box-shadow: 2px 2px 2px #C8D5B9;
+    border-radius: 30px;
+}
+
+
 /*Hero*/
 
 .hero{
@@ -343,6 +356,9 @@ header a:hover{
     animation-iteration-count: infinite;
     
 }
+
+
+
 
 /*primera fila*/
 
@@ -867,6 +883,68 @@ body .bread{
 
 /* Estilos contactos */
 
+/* Ventana modal */
+
+ .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background-color: rgba(0, 0, 0, 0.446);
+    opacity: 0;
+    z-index: -1;
+}
+
+.overlay.visible{
+    opacity: 1;
+    z-index: 9;
+
+} 
+
+ .modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: all 500ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* iframe{
+    border:10px solid white;
+
+} */
+
+.modal.visible{
+    opacity: 1;
+    visibility: visible;
+} 
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col4.columna{
+    display: flex;
+    align-items: center;
+}
+.boton{
+    cursor: pointer;    
+}
+
+
+
+/* filas */
 .fila .col1.columna {
     display: flex;
     align-items: flex-start;

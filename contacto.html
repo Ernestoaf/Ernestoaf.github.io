@@ -20,22 +20,22 @@
 
 </head>
 
-<body  id="aviso">
-    
+<body id="aviso">
+
     <header class="blanco">
-            <div class="burger2">
-                    <div class="barra arriba"></div>
-                    <div class="barra media"></div>
-                    <div class="barra abajo"></div>
-            </div>
-            <div class="menu2">
-                    <ul>
-                            <a href="/">Inicio</a>
-                            <a href="./compra.html">Compra</a>
-                            <a href="./alquiler.html" class="activo">Alquiler</a>
-                            <a href="./contacto.html">Contacto</a>
-                    </ul>
-            </div>
+        <div class="burger2">
+            <div class="barra arriba"></div>
+            <div class="barra media"></div>
+            <div class="barra abajo"></div>
+        </div>
+        <div class="menu2">
+            <ul>
+                <a href="/">Inicio</a>
+                <a href="./compra.html">Compra</a>
+                <a href="./alquiler.html" class="activo">Alquiler</a>
+                <a href="./contacto.html">Contacto</a>
+            </ul>
+        </div>
         <a href="/" class="logo">
             <i class="fas fa-home"></i>
         </a>
@@ -66,22 +66,54 @@
 
     <div class="fila">
         <div class="col1 columna">
-                <h2>Datos de la empresa  </h2>
+            <h2>Datos de la empresa </h2>
             <ul>
-            <li><i class="fas fa-map-pin"></i>&nbsp;PisosMil S.L.</li>
-            <li><i class="fas fa-home"></i>&nbsp;Calle Muchas Ventas nº3</li>
-            <li><i class="fas fa-home"></i>&nbsp;10.690 Benalmádena</li>
-            <li><i class="fas fa-envelope"></i>&nbsp;info@pisosmil.com</li>
-            <li><i class="fas fa-phone"></i>&nbsp;690690690</li>
-        </ul>
-    </div>
-    <div class="col4 columna">
-        <h2>Nuestra ubicación</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.298926053577!2d-4.575568049918184!3d36.59510897989315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e34521799fa9%3A0xa9eeb556dfdcdc56!2sBenalmadena+Pueblo!5e0!3m2!1ses!2ses!4v1518562082318" width="300" height="190" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+                <li>
+                    <i class="fas fa-map-pin"></i>&nbsp;PisosMil S.L.</li>
+                <li>
+                    <i class="fas fa-home"></i>&nbsp;Calle Muchas Ventas nº3</li>
+                <li>
+                    <i class="fas fa-home"></i>&nbsp;10.690 Benalmádena</li>
+                <li>
+                    <i class="fas fa-envelope"></i>&nbsp;info@pisosmil.com</li>
+                <li>
+                    <i class="fas fa-phone"></i>&nbsp;690690690</li>
+            </ul>
+        </div>
+
+        <!-- <div class="fila">
+                <div class="overlay"></div>
+                <button class="boton naranja" id="open">Más información.</button>
+                <div class="modal">
+                    <p class="modal-header">
+                        <i class="fas fa-info-circle"></i>
+                    </p>
+                    <hr>
+                    <p>Proximamente toda la información de JavasScript</p>
+                    <button class="boton naranja" id="close">De acuerdo</button>
+                </div>
+            </div> -->
+        <!-- Ventana modal -->
+        <div class="overlay"></div>
+        <div class="col4 columna">
+            <h2>Nuestra ubicación</h2>
+            <div class="mapa" id="open">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.298926053577!2d-4.575568049918184!3d36.59510897989315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e34521799fa9%3A0xa9eeb556dfdcdc56!2sBenalmadena+Pueblo!5e0!3m2!1ses!2ses!4v1518562082318"
+                    width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <button class="boton" >Ver Mapa</button>
+            </div>
+        </div>
+
+        <div class="modal">
+            <p class="modal-header">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.298926053577!2d-4.575568049918184!3d36.59510897989315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e34521799fa9%3A0xa9eeb556dfdcdc56!2sBenalmadena+Pueblo!5e0!3m2!1ses!2ses!4v1518562082318"
+                    width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </p>
+            <button class="boton" id="close">Cerrar</button>
+        </div>
     </div>
 
-    <div class="fila" >
+    <div class="fila">
         <div class="col1 legales">
             <h1>AVISO LEGAL</h1>
             <h2>1. DATOS IDENTIFICATIVOS</h2>
@@ -202,14 +234,14 @@
                 publicadas. que sean modificadas por otras.
             </p>
 
-            <h2  id="cookies">12. LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h2>
+            <h2 id="cookies">12. LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h2>
             <p>
                 La relación entre NNNNN y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los
                 Juzgados y tribunales de la ciudad de QQQQQ.</p>
             </p>
         </div>
-        
-        <div class="fila" >
+
+        <div class="fila">
             <div class="col1 legales">
                 <h1>POLITICA DE COOKIES</h1>
                 <p>
@@ -295,8 +327,8 @@
             </div>
         </div>
     </div>
-<!-- Formulario -->
-<div class="formd">
+    <!-- Formulario -->
+    <div class="formd">
         <form action="" id="formdetalle">
             <div class="fila alinear centro">
                 <h1>¿Aún tienes dudas?</h1>
@@ -305,15 +337,15 @@
             <div class="inputs">
                 <div class="fila">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" >
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                 </div>
                 <div class="fila">
                     <label for="nombre">Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" >
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
                 </div class="fila">
                 <div class="fila">
                     <label for="tel">Teléfono</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Teléfono" >
+                    <input type="tel" name="tel" id="tel" placeholder="Teléfono">
                 </div>
                 <div class="fila">
                     <label for="correo">Correo Electrónico</label>
@@ -367,8 +399,8 @@
         <div class="copy">
             <p>&copy; 2.018 Ernesto S.L.</p>
             <p class="reservados">Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y
-                    otros países. Todos los precios incluyen IVA (donde sea aplicable).
-                </p>
+                otros países. Todos los precios incluyen IVA (donde sea aplicable).
+            </p>
         </div>
     </footer>
 </body>
