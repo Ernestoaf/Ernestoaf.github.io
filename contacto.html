@@ -21,7 +21,7 @@
 </head>
 
 <body id="aviso">
-
+<div class="fila" id="top"></div>
     <header class="blanco">
         <div class="burger2">
             <div class="barra arriba"></div>
@@ -32,8 +32,8 @@
             <ul>
                 <a href="/">Inicio</a>
                 <a href="./compra.html">Compra</a>
-                <a href="./alquiler.html" class="activo">Alquiler</a>
-                <a href="./contacto.html">Contacto</a>
+                <a href="./alquiler.html">Alquiler</a>
+                <a href="./contacto.html" class="activo">Contacto</a>
             </ul>
         </div>
         <a href="/" class="logo">
@@ -97,11 +97,13 @@
         <div class="overlay"></div>
         <div class="col4 columna">
             <h2>Nuestra ubicación</h2>
+            <div class="transparente">
             <div class="mapa" id="open">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.298926053577!2d-4.575568049918184!3d36.59510897989315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e34521799fa9%3A0xa9eeb556dfdcdc56!2sBenalmadena+Pueblo!5e0!3m2!1ses!2ses!4v1518562082318"
-                    width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    width="250" height="250" frameborder="1" style="border:0" allowfullscreen></iframe>
                 <button class="boton" >Ver Mapa</button>
             </div>
+        </div>
         </div>
 
         <div class="modal">
@@ -361,6 +363,9 @@
 
     <!-- Footer -->
     <footer>
+            <a href="#top" class="top">
+                    <i class="fas fa-angle-double-up"></i>
+            </a>
         <div class="f1">
             <h3>¿Necesitas ayuda?</h3>
             <a href="./contacto.html">Contacta con nosotros</a>

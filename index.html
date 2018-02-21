@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <header class="blanco">
+    <span id="top"></span>
+    <header class="colornav">
         <p class="burger">&#9776;</p>
         <div class="menu">
             <p class="cerrar">&#x2715;</p>
@@ -61,14 +62,15 @@
         <h1 class="centrar">Bienvenido a Pisosmil</h1>
         <h2 class="centrar">Tu lugar para vivir.</h2>
         <a href="#primera">
-            <i class="fas fa-angle-double-down" id="primera"></i>
+            <i class="fas fa-angle-double-down"></i>
         </a>
     </div>
 
 
     <!-- Fila -->
-
-    <div class="fila fondo">
+        <!-- Para que el la barra de navegacion no tape el contendio al desplazarse mediante el boton -->
+        <span id="primera" style="margin-top: -50px; padding-bottom:50px; display:block;">&nbsp;</span>
+    <div class="fila fondo" >
         <h1>¡Bienvenido a PisosMil!</h1>
         <p>En PisosMil trabajamos por y para ti. Porque queremos que enceuntres lo que buscas, porque tenemos lo que buscas.
             Hecha un vistazo a nuestro gran catálogo de inmuebles, tanto si lo que necesitas es un alquiler o una compra.
@@ -147,6 +149,10 @@
     </div>
     <!-- Footeeer -->
     <footer>
+            <a href="#top" class="top">
+                    <i class="fas fa-angle-double-up"></i>
+            </a>
+
         <div class="f1">
             <h3>¿Necesitas ayuda?</h3>
             <a href="./contacto.html">Contacta con nosotros</a>
